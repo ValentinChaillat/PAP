@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald|PT+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 body{
-font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
 }
 
 h1,h2,h3{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Rubik Mono One', sans-serif;
 }

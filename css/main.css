@@ -4,9 +4,144 @@ header
 
 }
 body{
-
+background-color:black;
+color: white;
 }
 footer
 {
 
 }
+.navbar{
+  width: 100%;
+  height: 150px;
+  background-color: #1B1B1B
+}
+/* --------------------------Hero------------------------- */
+/* ---Titre et sous titre--- */
+h1{
+  text-align: center;
+  font-size: 5em;
+  color: #CF7421;
+}
+.subtilte{
+  text-align: center;
+  font-style: italic;
+  font-size: 2.8em;
+  color: #484848;
+}
+/* ---images--- */
+.bl{
+  float: left;
+  width: 40%;
+}
+.newbook{
+margin: 10px 0px 10px 20%;
+
+border: 1px solid #FFFFFF;
+}
+/* ---description--- */
+.description
+{
+  margin-left: 40%;
+  margin-top: 50px;
+  line-height: 37px;
+}
+.description-title{
+font-size: 1.5em;
+color: #CF7421;
+padding-bottom: 30px;
+}
+.bookdescription{
+margin-top: 30px;
+font-size: 1.5em;
+color: #969696;
+}
+.discover-link{
+width: 250px;
+height: 43px;
+background: #CF7421;
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 16px;
+text-align: center;
+margin-top: 20px;
+}
+.discover-link a{
+  text-decoration: none;
+  color: White;
+  font-size: 2em;
+}
+.affiliation-link{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.af-link{
+width: 213px;
+height: 59px;
+background: #FFFFFF;
+border: 2px solid #B2B2B2;
+box-sizing: border-box;
+border-radius: 16px;
+margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---fin--- */
