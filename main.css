@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+}
+header{
+  width: 100%;
+}
+/* ------------- Au dessus de la navbar --------------------------------------*/
+
+.toptxt{
+  float: left;
+  text-align: center;
+  z-index: 20;
+}
+h1{
+  margin: 200px 0px 100px 0px;
+  font-size: 5em;
+  color: #CF7421;
+}
+.top-contener p{
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3em;
+  color: #484848;
+}
+
+.img-top{
+  padding-left: 10%;
+  z-index: 10;
+}
+
+.top-contener{
+    background-color: #040404;
+    z-index: -90;
+    width: 100%;
+    background-color: grey;
+
+}
+.top-content{
+  width: 100%;
+  background-color: #040404;
+  display: grid;
+  grid-template-columns: auto auto ;
+}
+
+/*-------------------------- Navbar ------------------------------------------*/
+.topnav{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #040404;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    border-bottom: #A4A2A2 10px solid;
+}
+.topnav .menu{
+    display: none;
+}
+nav li{
+    display: inline-block;
+    padding: 0px 50px;
+}
+.topnav a{
+    display: block;
+    color: white;
+    padding: 20px 10px;
+    text-decoration: none;
+}
+
+/* triangle */
+.gray-triangle{
+  z-index: ;
+  position: absolute;
+  border-style: solid;
+  border-width: 69px 165px 0 165px;
+  border-color: #A4A2A2 transparent transparent transparent;
+  top: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.black-triangle{
+  z-index: 40;
+  position: absolute;
+  border-style: solid;
+  border-width: 69px 165px 0 165px;
+  border-color: #040404 transparent transparent transparent;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.section{
+    height: 2000px;
+}
