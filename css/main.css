@@ -1,8 +1,15 @@
+:root{
+--temps: .3s;
+}
+* {box-sizing: border-box;}
 body{
     margin: 0;
 }
 header{
   width: 100%;
+}
+.sectiondassault{
+  height: 1000px;
 }
 /* ------------- Au dessus de la navbar --------------------------------------*/
 
@@ -30,7 +37,7 @@ h1{
 
 .top-contener{
     background-color: #040404;
-    z-index: -90;
+    z-index: 90;
     width: 100%;
     background-color: grey;
 
@@ -45,6 +52,7 @@ h1{
 /*-------------------------- Navbar ------------------------------------------*/
 .topnav{
     display: block;
+    z-index: 100;
     width: 100%;
     text-align: center;
     background-color: #040404;
@@ -69,7 +77,7 @@ nav li{
 
 /* triangle */
 .gray-triangle{
-  z-index: ;
+
   position: absolute;
   border-style: solid;
   border-width: 69px 165px 0 165px;
@@ -79,7 +87,6 @@ nav li{
   transform: translateX(-50%);
 }
 .black-triangle{
-  z-index: 40;
   position: absolute;
   border-style: solid;
   border-width: 69px 165px 0 165px;
@@ -90,6 +97,234 @@ nav li{
 }
 
 
-.section{
-    height: 2000px;
+/* ---------------Page Hero----------------------------------------------*/
+.hero{
+  width: 100%;
+  height: 800px;
+  padding-top: 100px;
+  background-color: #040404;
 }
+.hero h2{
+  position: relative;
+  font-size: 2em;
+  left: 10%;
+  color: #CF7421;
+  text-shadow:2px 2px 0px  rgba(111,64,21, 0.5);
+  padding-bottom: 10px;
+}
+/* ---Titre et sous titre--- */
+
+.subtilte{
+  text-align: center;
+  font-style: italic;
+  font-size: 2.8em;
+  color: #484848;
+}
+/* ---images--- */
+.bl{
+  float: left;
+  width: 40%;
+}
+.newbook{
+margin: 10px 0px 10px 20%;
+
+border: 1px solid #FFFFFF;
+}
+/* ---description--- */
+.description
+{
+  margin-left: 40%;
+  margin-top: 50px;
+  line-height: 37px;
+}
+.description-title{
+font-size: 1.5em;
+color: #CF7421;
+padding-bottom: 30px;
+}
+.bookdescription{
+margin-top: 30px;
+font-size: 1.5em;
+color: #969696;
+}
+.discover-link{
+width: 250px;
+height: 43px;
+background: #CF7421;
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 16px;
+text-align: center;
+margin-top: 20px;
+}
+.discover-link a{
+  text-decoration: none;
+  color: White;
+  font-size: 2em;
+}
+.affiliation-link{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.af-link{
+width: 213px;
+height: 59px;
+background: #FFFFFF;
+border: 2px solid #B2B2B2;
+box-sizing: border-box;
+border-radius: 16px;
+margin-right: 20px;
+}
+
+/* ---------------Page de carte ----------------------------------------------*/
+.page-livre{
+  width: 100%;
+  height: 800px;
+  background-color: #1B1B1B;
+  padding-top: 100px;
+}
+.page-livre h2{
+  position: relative;
+  font-size: 2em;
+  left: 40px;
+  color: #CF7421;
+  text-shadow:2px 2px 0px  rgba(111,64,21, 0.5);
+}
+.card{
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.card1{
+  margin: 0px 10%;
+  height: 520px;
+  background-image: url(../css/images/fond.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+  transition: box-shadow var(--temps);
+  overflow: hidden;
+}
+.card2{
+  margin: 0px 10%;
+  height: 520px;
+  background-image: url(../css/images/carnet_de_guerre.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+  transition: box-shadow var(--temps);
+  overflow: hidden;
+
+}
+.card3{
+  margin: 0px 10%;
+  height: 520px;
+  background-image: url(../css/images/fdp_de_la_mode1.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+  transition: box-shadow var(--temps);
+  overflow: hidden;
+
+}
+.card1:hover, .card2:hover, .card3:hover{
+  box-shadow:0px 0px 50px rgba(255, 255, 255, 0.3);
+}
+.allbloc{
+  position: relative;
+}
+.blocbottom{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+}
+
+.cliquable{
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  background: rgba(158, 157, 149, 0.71);
+  transition: background var(--temps);
+}
+.arrow{
+  position: absolute;
+  bottom: -1%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 3;
+  animation: bounce 1.7s ease infinite forwards;
+}
+@keyframes bounce{
+  from {bottom: -3%;}
+  30%  {bottom: -1%;}
+  60%  {bottom: -3%;}
+  80%  {bottom: 0%;}
+  100% {bottom: -2%;}
+}
+
+.allbloc:hover .cliquable{
+  background: rgba(59,59,59, 0.98);
+  border: solid 2px white;
+  height: 520px;
+  transition:  .6s;
+}
+.allbloc:hover .arrow{
+  display: none;
+}
+.allbloc:hover  .card-content{
+  transform: translateY(-524px);
+  transition: 1.2s;
+}
+
+
+.card-content{
+  position: relative;
+  top: 520px;
+  height: 520px;
+}
+.card-title{
+  color: #CF7421;
+  text-shadow:1px 1px 1px  rgba(111,64,21, 0.5);
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 40px;
+}
+.card-text{
+  padding-top: 100px;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 40px;
+  color: #D7D7D7;
+}
+
+.card-link a{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  bottom: 10px;
+  text-decoration: none;
+  color: #CF7421;
+  text-align: center;
+  width: 177px;
+  background: rgb(59,59,59);
+  border: 1px solid #CF7421;
+  border-radius: 10px;
+  padding:10px 30px;
+}
+.card-link a:hover{
+  animation: remplir 2s ease infinite ;
+}
+@keyframes remplir {
+  0% {
+    width: 177px;
+  }
+  50%{
+      width: 190px;
+  }
+  100%{
+      width: 177px;
+  }
+}
+/* --------------------------------------------------------*/
