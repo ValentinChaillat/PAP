@@ -8,9 +8,14 @@ body{
 header{
   width: 100%;
 }
-.sectiondassault{
-  height: 1000px;
+footer{
+  position: relative;
+  width: 100%;
+  height: 190px;
+  background-color: #232323;
+  color: #A7A7A7;
 }
+
 /* ------------- Au dessus de la navbar --------------------------------------*/
 
 .toptxt{
@@ -104,6 +109,7 @@ nav li{
   padding-top: 100px;
   background-color: #040404;
 }
+/* ---Titre et sous titre--- */
 .hero h2{
   position: relative;
   font-size: 2em;
@@ -112,8 +118,6 @@ nav li{
   text-shadow:2px 2px 0px  rgba(111,64,21, 0.5);
   padding-bottom: 10px;
 }
-/* ---Titre et sous titre--- */
-
 .subtilte{
   text-align: center;
   font-style: italic;
@@ -126,9 +130,9 @@ nav li{
   width: 40%;
 }
 .newbook{
-margin: 10px 0px 10px 20%;
+  margin: 10px 0px 10px 20%;
 
-border: 1px solid #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
 /* ---description--- */
 .description
@@ -138,24 +142,24 @@ border: 1px solid #FFFFFF;
   line-height: 37px;
 }
 .description-title{
-font-size: 1.5em;
-color: #CF7421;
-padding-bottom: 30px;
+  font-size: 1.5em;
+  color: #CF7421;
+  padding-bottom: 30px;
 }
 .bookdescription{
-margin-top: 30px;
-font-size: 1.5em;
-color: #969696;
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #969696;
 }
 .discover-link{
-width: 250px;
-height: 43px;
-background: #CF7421;
-border: 2px solid #FFFFFF;
-box-sizing: border-box;
-border-radius: 16px;
-text-align: center;
-margin-top: 20px;
+  width: 250px;
+  height: 43px;
+  background: #CF7421;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 16px;
+  text-align: center;
+  margin-top: 20px;
 }
 .discover-link a{
   text-decoration: none;
@@ -168,13 +172,13 @@ margin-top: 20px;
   text-align: center;
 }
 .af-link{
-width: 213px;
-height: 59px;
-background: #FFFFFF;
-border: 2px solid #B2B2B2;
-box-sizing: border-box;
-border-radius: 16px;
-margin-right: 20px;
+  width: 213px;
+  height: 59px;
+  background: #FFFFFF;
+  border: 2px solid #B2B2B2;
+  box-sizing: border-box;
+  border-radius: 16px;
+  margin-right: 20px;
 }
 
 /* ---------------Page de carte ----------------------------------------------*/
@@ -183,13 +187,6 @@ margin-right: 20px;
   height: 800px;
   background-color: #1B1B1B;
   padding-top: 100px;
-}
-.page-livre h2{
-  position: relative;
-  font-size: 2em;
-  left: 40px;
-  color: #CF7421;
-  text-shadow:2px 2px 0px  rgba(111,64,21, 0.5);
 }
 .card{
   padding-top: 50px;
@@ -278,7 +275,6 @@ margin-right: 20px;
   transition: 1.2s;
 }
 
-
 .card-content{
   position: relative;
   top: 520px;
@@ -327,4 +323,174 @@ margin-right: 20px;
       width: 177px;
   }
 }
-/* --------------------------------------------------------*/
+/* ---------------footer------------------------------------------------------*/
+.return-link{
+  text-align: center;
+  transition: 0.3s;
+}
+.return-link a{
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #A7A7A7;
+}
+.return-link:hover{
+  opacity: 0.7;
+}
+
+.footer-content{
+  position: absolute;
+  bottom: 0px;
+  display: inline-block;
+  width: 100%;
+
+}
+.mention-legal{
+  position: absolute;
+  padding-left: 200px;
+  bottom: 0px;
+}
+.footer-link{
+  padding-left: 15px;
+  width: 195px;
+  float: left;
+  bottom: 0px;
+}
+.media-link:hover{
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.footer-contact{
+  float: right;
+  padding-right: 15px;
+}
+.footer-contact h4{
+  float: right;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* ---------------Page De Livre-----------------------------------------------*/
+/* -------------haut de page -----------------*/
+.onepage{
+  width: 100%;
+  padding-top: 100px;
+  background-color: #040404;
+}
+/* ---images--- */
+.image-gauche{
+  float: left;
+  width: 40%;
+}
+.book{
+  margin: 10px 0px 10px 25%;
+}
+/* ---description--- */
+.description{
+  width: 60%;
+  padding: 0% 5% 0% 0%;
+  margin-top: 50px;
+  line-height: 37px;
+}
+.description-title{
+  font-size: 1.5em;
+  color: #CF7421;
+  padding-bottom: 30px;
+}
+.bookdescription{
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #969696;
+}
+.discover-link{
+  width: 250px;
+  height: 43px;
+  background: #CF7421;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+.discover-link a{
+  text-decoration: none;
+  color: White;
+  font-size: 2em;
+}
+.affiliation-link{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.af-link{
+  width: 213px;
+  height: 59px;
+  background: #FFFFFF;
+  border: 2px solid #B2B2B2;
+  box-sizing: border-box;
+  border-radius: 16px;
+  margin-right: 20px;
+}
+/* ----------------Presentation-------------- */
+.presentation{
+  display: block;
+  width: 100%;
+  background-color: black;
+  padding: 10% 10% 0% 10%;
+}
+.presentation h3{
+  font-size: 1.5em;
+  color: #CF7421;
+  padding-bottom: 30px;
+}
+.presentation p{
+  font-size: 1.5em;
+  color: #969696;
+}
+/* ----------------------voir aussi -----------*/
+.voir-aussi{
+  display: block;
+  width: 100%;
+
+  color: white;
+  background-color: black;
+  padding: 5% 10% 10% 10%;
+}
+.voir-aussi h3{
+  font-size: 1.5em;
+  color: #CF7421;
+  padding-bottom: 30px;
+}
+.voir-aussi figure{
+  padding: 0px 2% 0% 0%;
+  display: inline-block;
+}
+.voir-aussi figure:hover{
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.voir-aussi figure:hover figcaption{
+  transition: 0.3s;
+  color: #D7D7D7;
+}
+.voir-aussi figcaption{
+  text-align: center;
+  font-size: 1.2em;
+  color: #969696;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fin */
