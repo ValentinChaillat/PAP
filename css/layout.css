@@ -1,16 +1,111 @@
-@media screen and (min-width: 1201px){
 
-    
-}
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1300px){
+  /* hero */
+  .img-top{
+    width: 70vh;
+  }
+  /* page nouveauté */
+  .h-description{
+    padding-left: 60px;
+  }
+  .af-link{
+    margin-right: 5px;
+    width: 120px;
+    height: 50px;
 
-}
-@media (min-width: 768px) and (max-width: 1200px){
+  }
+  .af-link img{
+    padding-top: 5px;
+    width: 100px;
+  }
+  /* page de livre */
+  .card1, .card2, .card3{
+    margin: 0px 1%;
+  }
+  /* slider youtube */
+  /* evenement */
+  .event{
+    height: 170vh;
+  }
+  .event h2{
+    padding: 100px 0px 50px 0px;
+  }
+  .event-bloc-left{
 
-}
-@media (min-width: 480px) and (max-width: 767px){
+    width: 100%;
+  }
+  .event img{
+    float: none;
 
+    width: 100vh;
+    margin: 0px;
+
+  }
+  /* footer */
 }
+@media screen and (max-width: 1000px){
+  /* --------Page nouveauté ---------------*/
+  .hero{
+    height: 180vh;
+  }
+  .hero h2{
+    padding-left: 10%;
+
+  }
+  .bl{
+    margin-left: 10%;
+    float: none;
+  }
+  .newbook{
+    margin: 0px;
+  }
+   .h-description{
+
+    padding-left: 10%;
+    margin-left: 0px;
+   }
+   /* --------Evenement ---------------*/
+   .event{
+     padding: 0px 10%;
+   }
+   .event img{
+     width: 75vh;
+   }
+
+
+
+  /* --------Carte de livre ---------------*/
+  .page-livre{
+    height: 300vh;
+  }
+  .page-livre h2{
+    padding-left: 25%;
+  }
+  .card {
+  grid-template-columns: auto;
+  }
+  .card1,.card2,.card3{
+    margin-left: 25%;
+    margin-right: 0px;
+    margin-top: 5%;
+    height: 80vh;
+    width: 400px;
+
+  }
+  .allbloc{
+    height: 80vh;
+  }
+  .card-content{
+    top: 100%;
+  }
+  .allbloc:hover  .card-content{
+    transform: translateY(-550px);
+  }
+  .allbloc:hover .cliquable{
+    height: 580px;
+  }
+}
+
 @media screen and (max-width: 800px) {
     .topnav li {display: none;}
     .topnav .triangle{display: none;}
@@ -18,9 +113,6 @@
       text-align: center;
       display: block;
     }
-  }
-
-  @media screen and (max-width: 800px) {
     .topnav.responsive  li{
       display: block;
       text-align: center;
@@ -28,4 +120,34 @@
     .topnav.responsive .triangle{
       background-color: red;
     }
+    .gray-triangle, .black-triangle{
+      display: none;
+    }
+  /* page d'acceuil */
+    h1{
+      font-size: 3em;
+    }
+    .img-top{
+      display: none;
+    }
+  /* page de carte */
+  .hero{
+    height: 190vh;
+  }
+  /* page de carte */
+    .page-livre h2{
+      padding-left: 5%;
+    }
+    .card1,.card2,.card3{
+      margin-left: 5%;
+    }
+
+    /* evenement */
+    .event{
+      height: 150vh;
+    }
+    .event img{
+      width: 50vh;
+    }
+
   }
